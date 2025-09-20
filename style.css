@@ -1,23 +1,86 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 20px;
-    background: #f4f4f9;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f5f7fa;
+  margin: 0;
+  padding: 0;
+  color: #333;
 }
-h1, h2, h3 {
-    color: #333;
+
+.container {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 20px;
 }
-form {
-    margin: 10px 0;
+
+h1 {
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 20px;
 }
-input, button {
-    margin: 5px;
-    padding: 8px;
+
+.dashboard {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 16px;
+  margin-bottom: 30px;
 }
+
+.card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+  padding: 16px;
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+}
+
+.card h2, .card h3 {
+  margin-top: 0;
+  color: #34495e;
+}
+
 ul {
-    background: #fff;
-    padding: 10px;
-    border-radius: 5px;
+  padding-left: 18px;
 }
+
 li {
-    margin-bottom: 5px;
+  margin-bottom: 8px;
+}
+
+button {
+  background: #3498db;
+  color: #fff;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+button:hover {
+  background: #2980b9;
+}
+
+form label {
+  display: block;
+  margin: 8px 0 4px;
+  font-weight: 500;
+}
+
+form input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+.forms {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 16px;
 }
